@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Support</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    </div>
+    <section id="tickets">
+        <div class="progress-bar-counter-container">
+            <div class="progress-bar-counter">
+                <span class="tickets-progress"></span>
+                <span class="tickets-progress-left"></span>
+            </div>
+            <div class="progress-bar-counter">
+                <progress></progress>
+            </div>
+        </div>
+    </section>
+    <template class="ticketTemplate">
+        <article>
+            <div>
+                <div>
+                    <span class="ticket-number"></span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="ticket-message"></span>
+                    <span class="ticket-time"></span>
+                </div>
+            </div>
+            <div class="ticket-color">Importance: <span class="ticket-importance"></span></div>
+            <div>
+                <span class="ticket-place"></span>
+                <a class="read-more-button" href="#">Read more</a>
+                <p class="read-more-content hide"></p>
+            </div>
+            <div>
+                <span class="ticket-name"></span>
+                <!-- <span class="ticket-middle"></span>
+                <span class="ticket-last"></span> -->
+            </div>
+            <div>
+                <button class="button-completed">Completed</button>
+            </div>
+        </article>
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+article {
+  width: 80;
+  margin: 0 auto;
+  min-height: 13vh;
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 1fr 4fr;
+  padding: 1.5em;
+  margin-bottom: 10em; }
+  article > div {
+    border: 1px solid grey;
+    padding: 1em 0 1em 1.5em;
+    background-color: lightgray; }
+  article .ticket-color {
+    background-color: pink; }
+  article .ticket-importance {
+    font-size: 1.2em; }
+  article .ticket-time, article .read-more-button {
+    float: right;
+    padding-right: 2em; }
+  article .button-completed {
+    float: right;
+    margin-right: 2em; }
+
+.progress-bar-counter-container {
+  margin-bottom: 3em; }
+
+.progress-bar-counter, progress {
+  width: 25%;
+  margin: 0 auto; }
+
+progress {
+  border: 1px solid black;
+  height: 2em;
+  width: 100%; }
+
+.progress-bar-counter:first-child {
+  margin-top: 5em; }
+
+.hide {
+  display: none; }
+
+.tickets-progress-left {
+  float: right; }
