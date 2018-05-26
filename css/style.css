@@ -1,44 +1,96 @@
-article {
-  width: 80;
-  margin: 0 auto;
-  min-height: 13vh;
-  display: grid;
-  grid-template-rows: 3;
-  grid-template-columns: 1fr 4fr;
-  padding: 1.5em;
-  margin-bottom: 10em; }
-  article > div {
-    border: 1px solid grey;
-    padding: 1em 0 1em 1.5em;
-    background-color: lightgray; }
-  article .ticket-color {
-    background-color: pink; }
-  article .ticket-importance {
-    font-size: 1.2em; }
-  article .ticket-time, article .read-more-button {
-    float: right;
-    padding-right: 2em; }
-  article .button-completed {
-    float: right;
-    margin-right: 2em; }
-
-.progress-bar-counter-container {
-  margin-bottom: 3em; }
-
-.progress-bar-counter, progress {
-  width: 25%;
-  margin: 0 auto; }
-
-progress {
-  border: 1px solid black;
-  height: 2em;
-  width: 100%; }
-
-.progress-bar-counter:first-child {
-  margin-top: 5em; }
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Raleway");
+body {
+  overflow-x: hidden;
+  font-size: 14px;
+  background-color: white; }
+  body h1 {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin-top: 2em; }
+  body article {
+    font-family: "Raleway", sans-serif;
+    width: 70%;
+    margin: 0 auto;
+    min-height: 13vh;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 1.5em;
+    margin-bottom: 3.5em;
+    border-radius: 20%; }
+    body article > div:not(button-completed) {
+      border: 1px solid white;
+      padding: 1em 0 1em 1.5em;
+      background-color: #e6e9ef; }
+    body article .ticket-color {
+      padding-left: 0;
+      font-size: 1.2em;
+      font-family: "Merriweather", serif;
+      text-align: center; }
+    body article .ticket-message {
+      font-size: 1.5em; }
+    body article .ticket-name {
+      font-size: 1.2em;
+      color: black;
+      font-family: "Raleway", sans-serif; }
+    body article .ticket-importance {
+      font-size: 1.2em; }
+    body article .read-more-button, body article .ticket-time {
+      float: right;
+      padding-right: 2em; }
+    body article .button-completed-container {
+      padding: 0; }
+      body article .button-completed-container .button-completed {
+        cursor: pointer;
+        float: right;
+        margin-right: 2em;
+        background-color: #5ffc62;
+        text-align: center;
+        height: 100%;
+        margin: 0;
+        border-left: 1px solid white;
+        font-family: "Merriweather", serif; }
+        body article .button-completed-container .button-completed p {
+          text-transform: uppercase;
+          padding: 1.1em 1em 0.5em 1em;
+          font-size: 1.2em; }
+        body article .button-completed-container .button-completed:hover {
+          background-color: #2bdb2f;
+          transition: background-color 0.2s ease-in; }
+          body article .button-completed-container .button-completed:hover p {
+            font-weight: bold;
+            transition: all 0.2s; }
+  body .progress-bar-counter-container {
+    margin-bottom: 3em;
+    width: 25%;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif; }
+    body .progress-bar-counter-container:first-child {
+      margin-top: 5em; }
+    body .progress-bar-counter-container progress {
+      border: 1px solid black;
+      height: 2em;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 5em; }
+      body .progress-bar-counter-container progress::-webkit-progress-value {
+        background: black;
+        height: 100%; }
+      body .progress-bar-counter-container progress::-webkit-progress-bar {
+        background: white; }
 
 .hide {
-  display: none; }
+  display: none;
+  transition: all 2s; }
 
 .tickets-progress-left {
   float: right; }
+
+.opacity {
+  transform: translateX(110vw);
+  transition: all 0.2s ease-in; }
+
+.faded {
+  color: grey; }
+
+.ticket-place {
+  color: black; }
